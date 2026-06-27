@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rl-golf"
+version = "0.1.0"
+description = "Biomechanical RL golf swing simulator — body proportions shape the swing"
+requires-python = ">=3.12"
+dependencies = [
+    "mujoco>=3.1",
+    "gymnasium>=0.29",
+    "stable-baselines3>=2.3",
+    "numpy",
+    "imageio[ffmpeg]",
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
